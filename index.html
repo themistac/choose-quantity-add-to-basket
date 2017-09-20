@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MakeAdder</title>
+	<style>
+		span {
+			margin: 0 10px;
+		}
+		button {
+			background-color: cornflowerblue;
+			border: 0;
+			padding: 5px 10px;
+			cursor: pointer;
+			border-radius: 5px;
+			transition: 300ms all ease-in-out;
+		}
+		button:disabled,
+		button.add:disabled {
+			background-color: #eee;
+			cursor: default;
+			color: #ccc;
+		}
+		button.add {
+			background-color: limegreen;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+<button id="minus">&minus;</button>
+<span id="amount"></span>
+<button id="plus">&plus;</button>
+<button id="addToBasket" class="add">Add</button>
+<button id="clearBasket">Clear</button>
+<button id="undo">Undo</button>
+
+<div id="basket"></div>
+
+<script src="plus-minus.js"></script>
+
+</body>
+</html>
